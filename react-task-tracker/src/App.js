@@ -1,6 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
-// * everything we see in the app is from here.
 function App() {
   return (
     <div className='App'>
@@ -15,4 +12,6 @@ export default App;
 /*
 className = css class
 for app = htmlFor
+
+Can only return 1 component
 */
