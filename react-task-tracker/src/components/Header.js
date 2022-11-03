@@ -14,7 +14,7 @@ Header.defaultProps = {
 
 // helpful for catching errors
 Header.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default Header;
