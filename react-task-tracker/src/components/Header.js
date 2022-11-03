@@ -12,6 +12,7 @@ Header.defaultProps = {
   title: 'Task tracker',
 };
 
+// helpful for catching errors
 Header.propTypes = {
   title: PropTypes.string,
 };
