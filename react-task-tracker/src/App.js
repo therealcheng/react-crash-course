@@ -21,13 +21,13 @@ function App() {
       id: 3,
       text: 'Bank',
       day: 'Feb 5th at 3:30pm',
-      reminder: true,
+      reminder: false,
     },
     {
       id: 4,
       text: 'Super Market',
       day: 'Feb 5th at 3:30pm',
-      reminder: true,
+      reminder: false,
     },
   ]);
 
