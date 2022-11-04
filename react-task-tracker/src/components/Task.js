@@ -1,7 +1,12 @@
-const task = () => {
+import { FaTimes } from 'react-icons/fa';
+
+const task = ({ task }) => {
   return (
-    <div className=''>
-      <h3>My Task</h3>
+    <div className='task'>
+      <h3>
+        {task.text} <FaTimes style={{ color: 'red', cursor: 'pointer' }} />
+      </h3>
+      <p>{task.day}</p>
     </div>
   );
 };
