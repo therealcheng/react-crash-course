@@ -21,7 +21,7 @@ const Tasks = () => {
       reminder: true,
     },
     {
-      id: 3,
+      id: 4,
       text: 'Super Market',
       day: 'Feb 5th at 3:30pm',
       reminder: true,
@@ -31,7 +31,7 @@ const Tasks = () => {
     <>
       {' '}
       {tasks.map((task) => (
-        <h3>{task.text}</h3>
+        <h3 key={task.id}>{task.text}</h3>
       ))}{' '}
     </>
   );
