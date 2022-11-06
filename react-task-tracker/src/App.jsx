@@ -6,32 +6,7 @@ import AddTask from './components/AddTask';
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      text: 'Doctor',
-      day: 'Feb 5th at 3:30pm',
-      reminder: true,
-    },
-    {
-      id: 2,
-      text: 'Library',
-      day: 'Feb 5th at 3:30pm',
-      reminder: true,
-    },
-    {
-      id: 3,
-      text: 'Bank',
-      day: 'Feb 5th at 3:30pm',
-      reminder: false,
-    },
-    {
-      id: 4,
-      text: 'Super Market',
-      day: 'Feb 5th at 3:30pm',
-      reminder: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   // Add task
   const addTask = (task) => {
@@ -57,7 +32,10 @@ function App() {
 
   return (
     <div className='container'>
-      <Header onAdd={() => setShowAddTask(!showAddTask)} />
+      <Header
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
+      />
       {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
