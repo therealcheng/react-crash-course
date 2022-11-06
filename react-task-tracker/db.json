@@ -16,7 +16,7 @@
       "id": 3,
       "text": "Bank",
       "day": "Feb 5th at 3:30pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 4,
